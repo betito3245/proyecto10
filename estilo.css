@@ -1,0 +1,123 @@
+/* Estilos generales - CAMBIO DE TIPOGRAFÍA */
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif; /* CAMBIO 1: Tipo de letra */
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+/* Encabezado - CAMBIO DE COLOR */
+header {
+    background-color: #0d1b2a; /* CAMBIO 2: Color encabezado - azul muy oscuro */
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+header p {
+    font-size: 20px;
+    color: #e0e1dd;
+}
+
+/* Menú - CAMBIO DE COLOR */
+nav {
+    background-color: #415a77; /* CAMBIO 3: Color menú */
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166; /* Efecto hover menú */
+}
+
+/* Contenido */
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1b263b; /* CAMBIO 4: Color de los títulos */
+    border-bottom: 2px solid #415a77;
+    padding-bottom: 10px;
+}
+
+/* Imagen */
+img {
+    width: 350px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 4px solid #415a77;
+}
+
+/* Tarjetas - CAMBIO DE DISEÑO */
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que no se rompa en celular */
+}
+
+.tarjeta {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e1dd; /* CAMBIO 5: Diseño tarjetas */
+    border: none;
+    border-left: 5px solid #415a77;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    background-color: #778da9;
+    color: white;
+}
+
+/* Botón - CAMBIO DE ESTILO */
+button {
+    background-color: #ff7b00; /* CAMBIO 6: Estilo botón */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0d1b2a;
+    transform: scale(1.1);
+}
+
+/* Pie de página - CAMBIO DE COLOR */
+footer {
+    background-color: #0d1b2a; /* CAMBIO 7: Color pie */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

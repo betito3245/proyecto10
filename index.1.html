@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proyecto de Cristian</title>
+<style>
+body{font-family:Arial;background:#eef2f7;padding:20px}
+form{background:white;max-width:600px;margin:auto;padding:25px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1)}
+label{display:block;margin-top:12px;font-weight:bold}
+input, select, textarea{width:100%;padding:8px;margin-top:5px;border-radius:5px;border:1px solid #ccc;box-sizing:border-box}
+.opciones{display:flex;gap:15px;margin-top:5px}
+.opciones label{font-weight:normal}
+button{margin-top:15px;padding:10px 20px;border:none;border-radius:5px;cursor:pointer}
+.btn-enviar{background:#000;color:#fff}
+.btn-limpiar{background:#ccc;color:#000}
+fieldset{margin-top:20px;border:1px solid #ccc;padding:15px;border-radius:8px}
+legend{font-weight:bold;padding:0 10px}
+h1{text-align:center;margin-bottom:20px}
+</style>
+</head>
+<body>
+
+<h1>Formulario de la tarea de HTML</h1>
+
+<form action="#" method="POST">
+
+<fieldset>
+<legend>Datos personales</legend>
+
+<label for="nombre">Nombre completo:</label>
+<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required minlength="3" maxlength="50">
+
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+<label for="edad">Edad:</label>
+<input type="number" id="edad" name="edad" placeholder="18" min="10" max="99" required>
+
+</fieldset>
+
+<fieldset>
+<legend>Información académica</legend>
+
+<label for="especialidad">Especialidad:</label>
+<select id="especialidad" name="especialidad" required>
+<option value="">Seleccione una especialidad</option>
+<option value="programacion">Programación</option>
+<option value="TDO">Redes</option>
+<option value="Soporte">Ofimática</option>
+</select>
+
+<label>Semestre:</label>
+<div class="opciones">
+<label><input type="radio" name="semestre" value="segundo" required> Segundo</label>
+<label><input type="radio" name="semestre" value="cuarto"> Cuarto</label>
+<label><input type="radio" name="semestre" value="sexto"> Sexto</label>
+</div>
+
+<label>Temas de interés:</label>
+<div class="opciones">
+<label><input type="checkbox" name="interes" value="html"> HTML</label>
+<label><input type="checkbox" name="interes" value="css"> CSS</label>
+<label><input type="checkbox" name="interes" value="js"> JavaScript</label>
+</div>
+
+</fieldset>
+
+<fieldset>
+<legend>Comentarios</legend>
+<label for="comentario">Escribe un comentario:</label>
+<textarea id="comentario" name="comentario" rows="4" placeholder="Escribe aquí tus comentarios..." required minlength="10" maxlength="200"></textarea>
+</fieldset>
+
+<button type="submit" class="btn-enviar">Enviar formulario</button>
+<button type="reset" class="btn-limpiar">Limpiar</button>
+
+</form>
+</body>
+</html>
